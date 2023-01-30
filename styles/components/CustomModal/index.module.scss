@@ -1,0 +1,191 @@
+.wrapper_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  /* background: #1A1A1A; */
+  background: rgba(26, 26, 26, 0.7);
+  transition: all 0.3s;
+  .wrapper_modal_inside {
+    background: #2B3240;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 80px 120px 10px rgba(36, 148, 107, 0.15);
+    width: 680px;
+  
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .wrapper_modal_inside__close_btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 20px 20px 0 0;
+      cursor: pointer;
+    }
+    .wrapper_modal_inside__img {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      @media screen and (max-width: 1024px) {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .wrapper_modal__title {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+    text-align: center;
+
+    color: #F0F0F0;
+    @media screen and (max-width: 500px) {
+      font-size: 32px;
+      line-height: 46px;
+    }
+  }
+  .wrapper_modal__description {
+    margin-top: 20px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    text-align: center;
+
+    color: #E6E6E6;
+
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .wrapper_modal__ok_btn {
+    border: none;
+    padding: 15px 30px 15px 30px;
+    color: #FFFFFF;
+    background: #109857;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 50px;
+    width: 250px;
+    font-size: 18px;
+    line-height: 130%;
+    @media screen and (max-width: 500px) {
+      padding: 10px 30px 10px 30px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  .wrapper_modal__cancel_btn {
+    border: none;
+    padding: 15px 30px 15px 30px;
+    color: #109857;
+    border: 1px solid #109857;
+    background: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: all 0.3s;
+    width: 250px;
+    font-size: 18px;
+    line-height: 130%;
+    @media screen and (max-width: 500px) {
+      padding: 10px 30px 10px 30px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  
+  .wrapper_modal__action_btn_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    @media screen and (max-width: 500px) {
+      padding: 10px 30px 10px 30px;
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  .redirect_link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #00D186;
+  }
+}
+.wrapper_modal_justify_content_center {
+  justify-content: center;
+}
+.wrapper_modal_justify_content_default {
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+.transfer-warning-logo {
+  display: flex;
+  justify-content: center;
+  flex-basis: content;
+}
+
+.description-modal-transfer {
+  padding: 0 15px;
+
+  h3 {
+    margin: 0;
+    font-family: 'Mulish';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #14142B;
+  }
+}
+
+.transfer-btn-wrapper {
+  margin-top: 30px;
+  padding: 0 27px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  .btn-cancel-transfer {
+    width: 100%;
+    background: none;
+    color: #109857 !important;
+    border: 1px solid #109857;
+  }
+
+  .btn-transfer {
+    width: 100%;
+    background: #109857 !important;
+    color: #FFFFFF !important;
+
+    &:hover {
+      background: #118f52 !important;
+      transition: .3s;
+    }
+  }
+}

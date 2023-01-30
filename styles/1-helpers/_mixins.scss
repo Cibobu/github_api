@@ -1,0 +1,9 @@
+@mixin sectionPadding {
+    padding: 60px 0;
+}
+
+@mixin banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}

@@ -1,0 +1,14 @@
+html{
+    box-sizing: border-box;
+    background: $whiteColor;
+}
+
+* *::before *::after{
+    box-sizing: inherit;
+} 
+
+.container{
+    width: 100%;
+    overflow: auto;
+    max-width: 1200px;
+}
