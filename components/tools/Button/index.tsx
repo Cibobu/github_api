@@ -3,7 +3,7 @@ import { FC, PropsWithChildren, HTMLAttributes } from "react"
 interface IButton extends HTMLAttributes<HTMLButtonElement> {
     disabled?: boolean | false,
     typeButton: "button" | "submit" | "reset" | undefined,
-    children: unknown,
+    children: any,
 }
 
 const ButtonComponent: FC<PropsWithChildren<IButton>> = (props) => {
