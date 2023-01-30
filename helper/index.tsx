@@ -1,11 +1,23 @@
 import { KeyboardEvent, useEffect, useRef, useState } from "react";
 
+export const limitAddressDisplay = (text: string, length: number) => {
+	if (!text) { return '-'; }
+	else if (text.length > length) {
+		return `${text.substring(0, length)} ...`
+	} else {
+		return text
+	}
+	// return `${text.substring(0, length)} ... ${text.substring(text.length - length)}`;
+}
+
 export const smoothScroll = (elementId: string, headerHeight: number) => {
 	const scrollElement = document.getElementById(elementId)?.offsetTop || 0;
 	window.scrollTo({ top: scrollElement-headerHeight, behavior: 'smooth'});
 }
 
 export const redirectToNewPage = (url: string, isNewTab?: boolean) => {
+	console.log('url ;', url);
+	
 	const link = document.createElement("a");
 	link.href = url
 	if(isNewTab) link.target = "_blank"

@@ -22,6 +22,9 @@ export interface GlobalStateType {
 	isModal?: ModalProps;
 	innerHeight: number;
 	currentSlug?: ParsedUrlQuery;
+	urlRepo?: string;
+	AvatarRepo?: string;
+	UsernameRepo?: string;
 }
 
 // DEFAULT VALUE GLOBAL STATE

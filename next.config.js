@@ -3,12 +3,16 @@ const path = require('path')
 
 module.exports = {
   images: {
-    domains: ['avatars.githubusercontent.com', 'localhost'],
+    domains: ['avatars.githubusercontent.com', 'localhost', 'images.pexels.com'],
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'avatars.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
       },
     ],
   },

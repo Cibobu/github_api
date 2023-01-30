@@ -1,0 +1,29 @@
+.card_container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover {
+        height: 145px;
+        .hidden_arrow {
+            display: block;
+        }
+    }
+
+    .hidden_arrow {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #1369ce;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s ease 0s;
+        display: none;
+
+        .hidden_arrow_content {
+            display: inline-block;
+            color: #FFFFFF;
+        }
+    }
+}
